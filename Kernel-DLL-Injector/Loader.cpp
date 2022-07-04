@@ -403,13 +403,13 @@ int main()
 	Sleep(1200);
 
 	DWORD threadId;
-	DWORD processId = GetProcessInformationByWindow(xor ("Adsýz - Not Defteri"), &threadId); // WRITE WINDOW NAME
+	DWORD processId = GetProcessInformationByWindow(xor ("WINDOW NAME"), &threadId); // WRITE WINDOW NAME
 
 	if (processId == 0 && threadId == 0)
 	{
 		for (;; Sleep(100))
 		{
-			processId = GetProcessInformationByWindow(xor ("Adsýz - Not Defteri"), &threadId);  // WRITE WINDOW NAME
+			processId = GetProcessInformationByWindow(xor ("WINDOW NAME"), &threadId);  // WRITE WINDOW NAME
 
 			if (processId != 0 && threadId != 0)
 				break;
