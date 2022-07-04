@@ -162,7 +162,9 @@ uintptr_t LoadRemoteLibrary(const char* moduleName, DWORD threadId)
 
 	memoryUtils->WriteMemory(workerBase, (uintptr_t)localCode, workerCodeSize);
 
-	HHOOK hHook = SetWindowsHookEx(WH_GETMESSAGE, (HOOKPROC)workerBase, hNtdll, threadId);
+	// EAC CAN SEE THIS (FLAG etc.) @_@
+	HHOOK hHook = SetWindowsHookEx(WH_GETMESSAGE, (HOOKPROC)workerBase, hNtdll, threadId); 
+	//
 
 	while (remoteLoader->Status != INJECTED)
 	{
@@ -403,13 +405,13 @@ int main()
 	Sleep(1200);
 
 	DWORD threadId;
-	DWORD processId = GetProcessInformationByWindow(xor ("WINDOW NAME"), &threadId); // WRITE WINDOW NAME
+	DWORD processId = GetProcessInformationByWindow(xor ("WINDOW NAME"), &threadId); // WRITE WINDOW NAME for proccess  <------
 
 	if (processId == 0 && threadId == 0)
 	{
 		for (;; Sleep(100))
 		{
-			processId = GetProcessInformationByWindow(xor ("WINDOW NAME"), &threadId);  // WRITE WINDOW NAME
+			processId = GetProcessInformationByWindow(xor ("WINDOW NAME"), &threadId);  // WRITE WINDOW NAME for proccesss <------
 
 			if (processId != 0 && threadId != 0)
 				break;
@@ -421,7 +423,7 @@ int main()
 	memoryUtils = new MemoryUtils(operation, processId);
 
 	string current_path = std::filesystem::current_path().string();
-	string image_path = current_path + xor ("\\test.dll");  // WRITE DLL PATH
+	string image_path = current_path + xor ("\\test.dll");  // WRITE DLL PATH <------
 
 	if (!(LoadLocalImage(image_path.c_str())))
 	{
