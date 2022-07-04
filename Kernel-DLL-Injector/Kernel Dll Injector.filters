@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{61bc51c6-141d-4fc0-af67-58e35cc9d7e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vulnerable">
+      <UniqueIdentifier>{b2e55e85-97af-4ae2-a2eb-224b0a13721c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{7dc26e77-57f2-4c44-8604-68c0cd31dede}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vulnerable\driver">
+      <UniqueIdentifier>{505f70e7-fa3e-4d5e-be18-5c5eea44110c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vulnerable\kdshitter">
+      <UniqueIdentifier>{f8f91e30-ead3-4827-97d9-9fbc5d1e6d6d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Communication.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Loader.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryUtils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessUtils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Mapper.cpp">
+      <Filter>Vulnerable</Filter>
+    </ClCompile>
+    <ClCompile Include="intel_driver.cpp">
+      <Filter>Vulnerable\kdshitter</Filter>
+    </ClCompile>
+    <ClCompile Include="kdmapper.cpp">
+      <Filter>Vulnerable\kdshitter</Filter>
+    </ClCompile>
+    <ClCompile Include="portable_executable.cpp">
+      <Filter>Vulnerable\kdshitter</Filter>
+    </ClCompile>
+    <ClCompile Include="service.cpp">
+      <Filter>Vulnerable\kdshitter</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>Vulnerable\kdshitter</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Communication.hpp">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Loader.hpp">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Operation.hpp">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryUtils.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessUtils.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="xorstr.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Mapper.hpp">
+      <Filter>Vulnerable</Filter>
+    </ClInclude>
+    <ClInclude Include="driver.hpp">
+      <Filter>Vulnerable\driver</Filter>
+    </ClInclude>
+    <ClInclude Include="intel_driver.hpp">
+      <Filter>Vulnerable\kdshitter</Filter>
+    </ClInclude>
+    <ClInclude Include="intel_driver_resource.hpp">
+      <Filter>Vulnerable\kdshitter</Filter>
+    </ClInclude>
+    <ClInclude Include="kdmapper.hpp">
+      <Filter>Vulnerable\kdshitter</Filter>
+    </ClInclude>
+    <ClInclude Include="nt.hpp">
+      <Filter>Vulnerable\kdshitter</Filter>
+    </ClInclude>
+    <ClInclude Include="portable_executable.hpp">
+      <Filter>Vulnerable\kdshitter</Filter>
+    </ClInclude>
+    <ClInclude Include="service.hpp">
+      <Filter>Vulnerable\kdshitter</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.hpp">
+      <Filter>Vulnerable\kdshitter</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
