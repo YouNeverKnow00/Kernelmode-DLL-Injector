@@ -10,6 +10,7 @@
 
  **Credits:**
 - [mactec0](https://github.com/mactec0/Kernelmode-manual-mapping-through-IAT "mactec0") 
+- [MrKouhx](https://github.com/MrKouhx "MrKouhx")
 
- # To contact
+# To contact
  Discord: Emree#2023
