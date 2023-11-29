@@ -3,7 +3,7 @@
 * It uses Socket as the communication method.
 * It uses the Manual mapping for dll. (Without Threads)
 
-**Showcase:** ![](https://i.vgy.me/MQo1ul.gif)
+**Showcase:** ![](example.gif)
  
 **Do not use this project directly in EAC or BE games, you will most likely be banned if you do.**
 **You can use it to learn**
